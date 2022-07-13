@@ -1,0 +1,160 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: rgb(63, 10, 207);
+    --gold: #ffcf57;
+    --green: #214845;
+}
+
+body {
+    font-family: 'Cormorant SC', serif;
+    background-image: url(../images/eldenring.jpg);
+    background-size: cover;
+    position:initial;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: var(--gold);
+}
+
+#highScore {
+    width: 100%;
+    color: var(--gold);
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    color: var(--gold);
+}
+
+#wrapperStyle {
+    width: 100%;
+}
+
+#wrapper {
+    width: 500px;
+    height: 500px;
+    border: 5px solid var(--gold);
+    border-radius: 10px;
+    background-color: rgba(8, 71, 73, 0.5);
+    margin: auto;
+}
+
+#startTime {
+    background-color: var(--green);
+    padding: 15px 32px;
+    font-size: 20px;
+    color: var(--gold);
+    border-color: var(--black);
+    font-family: 'Cormorant SC', serif;
+    cursor: pointer; 
+}
+
+#questionsDiv {
+    margin: 30px;
+    padding-top: 25px;
+    color: var(--gold);
+    font-size: larger;
+    text-align: center;
+}
+
+#currentTime {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 20px;
+    color: var(--black);
+}
+
+
+p {
+    color: var(--gold);
+    font-size: large;
+    left: 46%;
+}
+
+li {
+    cursor: pointer; 
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    list-style: none;
+    width: 80%;
+    font-size: 18px;
+    color: var(--gold);
+    background: var(--black)
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid var(--gold);
+    padding: 15px;
+    font-size: x-large;
+}
+
+#Submit {
+    cursor: pointer; 
+    padding: 15px 32px;
+    font-size: 30px;
+    color: var(--gold);
+    background-color: var(--green);
+}
+
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+button {
+    border-radius: 8px;
+    font-family: 'Cormorant SC', serif;
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        max-width: 786px; 
+    }
+
+#wrapper {
+    position: absolute;
+    left: 20%;
+}
+
+a {
+    margin-left: 20%;
+}
+    #goBack { 
+        position: relative;
+        left: 55%;
+    }
+
+    #clear {
+        position: relative;
+        right: 5%;           
+    }
+}
+     
+@media screen and (max-width: 640px) {
+
+ body {
+        min-width: 640px;
+    }
+
+#wrapper {
+    position: absolute;
+    left: 10%;
+}
+  a {
+      margin-left: 10%;
+  } 
+}
